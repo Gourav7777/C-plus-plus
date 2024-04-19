@@ -48,7 +48,7 @@ private:
 
 public:
     FastFoodCafe() {
-        // Constructor to get input for all attributes
+        
         cout << "Enter cafe ID: ";
          cin >> cafe_id;
 
@@ -80,45 +80,45 @@ public:
 
 int main() {
     cout << "Question 1 =>\n";
-    // int N;
-    // cout << "Enter the number of diamond companies: ";
-    // cin >> N;
+    int N;
+    cout << "Enter the number of diamond companies: ";
+    cin >> N;
 
-    // if (N > 0) {
-    //     for (int i = 0; i < N; ++i) {
-    //         cout << "Enter details for Diamond Company " << i + 1 << ":" << endl;
-    //         int id, staffQuantity, importRawDiamonds, exportDiamonds;
-    //         int revenue;
-    //         char name[50], ceo[50];
+    if (N > 0) {
+        for (int i = 0; i < N; ++i) {
+            cout << "Enter details for Diamond Company " << i + 1 << ":" << endl;
+            int id, staffQuantity, importRawDiamonds, exportDiamonds;
+            int revenue;
+            char name[50], ceo[50];
 
-    //         cout << "Company ID: ";
-    //         cin >> id;
+            cout << "Company ID: ";
+            cin >> id;
 
-    //         cout << "Company Name: ";
-    //         cin >> name;
+            cout << "Company Name: ";
+            cin >> name;
 
-    //         cout << "Staff Quantity: ";
-    //         cin >> staffQuantity;
+            cout << "Staff Quantity: ";
+            cin >> staffQuantity;
 
-    //         cout << "Annual Revenue: $";
-    //         cin >> revenue;
+            cout << "Annual Revenue: $";
+            cin >> revenue;
 
-    //         cout << "Imported Raw Diamonds per Year: ";
-    //         cin >> importRawDiamonds;
+            cout << "Imported Raw Diamonds per Year: ";
+            cin >> importRawDiamonds;
 
-    //         cout << "Exported Diamonds per Year: ";
-    //         cin >> exportDiamonds;
+            cout << "Exported Diamonds per Year: ";
+            cin >> exportDiamonds;
 
-    //         cout << "CEO: ";
-    //         cin >> ceo;
+            cout << "CEO: ";
+            cin >> ceo;
 
             
-    //         DiamondCompany company(id, name, staffQuantity, revenue, importRawDiamonds, exportDiamonds, ceo);
+            DiamondCompany company(id, name, staffQuantity, revenue, importRawDiamonds, exportDiamonds, ceo);
            
-    //     }
-    // } else {
-    //     cout << "Invalid number of companies. Please enter a positive integer." << endl;
-    // }
+        }
+    } else {
+        cout << "Invalid number of companies. Please enter a positive integer." << endl;
+    }
 
     cout << endl;
     cout << "Question 2 => \n";
@@ -130,10 +130,7 @@ int main() {
     FastFoodCafe *cafes = new FastFoodCafe[z];
 
     
-    for(int i = 0; i < z; i++) {
-        cout << "Enter details for Fast Food Cafe " << i + 1 << ":" << endl;
-        cafes[i] = FastFoodCafe(); 
-    }
+  
    
 
     for(int i = 0; i < z; i++) {
